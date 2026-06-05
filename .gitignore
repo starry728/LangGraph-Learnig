@@ -1,0 +1,31 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+*.log
+
+# virtual env
+venv/
+.venv/
+weather-env/
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# 大模型 / 向量 DB 常见大文件（按需）
+chroma_db/
+*.sqlite3
+
+# OS
+Thumbs.db
+Desktop.ini
+EOF
+
+
+langgraph-env/
+.env
